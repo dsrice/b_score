@@ -97,13 +97,19 @@ class MemberFrame(tk.Frame):
         self.frametitle.pack()
 
     def create_score(self):
-        print(self.l1_name.get())
         self.score_modal = tk.Toplevel(self)
         self.score_modal.title("スコア表")
-        self.score_modal.geometry("300x200")
-        score_frame = LaneFrame(self.score_modal)
-        score_frame.setting(self.l1_name.get(), self.l2_name.get(), self.l3_name.get())
+        self.score_modal.geometry("1500x200")
+        socore_modal_frame = tk.Frame(self.score_modal)
+        socore_modal_frame.grid()
 
+        l_score_frame = LaneFrame(socore_modal_frame)
+        l_score_frame.setting(self.l1_name.get(), self.l2_name.get(), self.l3_name.get())
+
+        r_score_frame = LaneFrame(socore_modal_frame)
+        r_score_frame.setting(self.r1_name.get(), self.r2_name.get(), self.r3_name.get())
+        l_score_frame.grid(row=0, column=0)
+        r_score_frame.grid(row=0, column=1)
 
         self.set_modal = tk.Toplevel(self)
         self.set_modal.title("スコア設定")
