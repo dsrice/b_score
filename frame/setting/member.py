@@ -99,7 +99,7 @@ class MemberFrame(tk.Frame):
     def create_score(self):
         self.score_modal = tk.Toplevel(self)
         self.score_modal.title("スコア表")
-        self.score_modal.geometry("1500x200")
+        self.score_modal.geometry("1300x200")
         socore_modal_frame = tk.Frame(self.score_modal)
         socore_modal_frame.grid()
 
@@ -112,6 +112,9 @@ class MemberFrame(tk.Frame):
         r_score_frame.grid(row=0, column=1)
 
         self.set_modal = tk.Toplevel(self)
-        self.set_modal.title("スコア設定")
+        self.set_modal.title("スコア設定(左）")
         self.set_modal.geometry("300x200")
 
+        self.set_modal = tk.Toplevel(self)
+        self.set_modal.title("スコア設定(右）")
+        self.set_modal.geometry("300x200")
