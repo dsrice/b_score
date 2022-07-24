@@ -54,22 +54,22 @@ class ScoreTable(tk.Frame):
         self.total_score = tk.Label(self, text="", background="white", bd=1, relief=tk.SOLID, width=6)
 
         self.name_label.grid(row=0, column=0)
-        self.name.grid(row=1, column=0, rowspan=2, sticky=tk.N + tk.S)
+        self.name.grid(row=1, column=0, rowspan=2, sticky=tk.NS)
 
-        self.label_1.grid(row=0, column=1, columnspan=2, sticky=tk.W + tk.E)
-        self.label_2.grid(row=0, column=3, columnspan=2, sticky=tk.W + tk.E)
-        self.label_3.grid(row=0, column=5, columnspan=2, sticky=tk.W + tk.E)
-        self.label_4.grid(row=0, column=7, columnspan=2, sticky=tk.W + tk.E)
-        self.label_5.grid(row=0, column=9, columnspan=2, sticky=tk.W + tk.E)
-        self.label_6.grid(row=0, column=11, columnspan=2, sticky=tk.W + tk.E)
-        self.label_7.grid(row=0, column=13, columnspan=2, sticky=tk.W + tk.E)
-        self.label_8.grid(row=0, column=15, columnspan=2, sticky=tk.W + tk.E)
-        self.label_9.grid(row=0, column=17, columnspan=2, sticky=tk.W + tk.E)
+        self.label_1.grid(row=0, column=1, columnspan=2, sticky=tk.EW)
+        self.label_2.grid(row=0, column=3, columnspan=2, sticky=tk.EW)
+        self.label_3.grid(row=0, column=5, columnspan=2, sticky=tk.EW)
+        self.label_4.grid(row=0, column=7, columnspan=2, sticky=tk.EW)
+        self.label_5.grid(row=0, column=9, columnspan=2, sticky=tk.EW)
+        self.label_6.grid(row=0, column=11, columnspan=2, sticky=tk.EW)
+        self.label_7.grid(row=0, column=13, columnspan=2, sticky=tk.EW)
+        self.label_8.grid(row=0, column=15, columnspan=2, sticky=tk.EW)
+        self.label_9.grid(row=0, column=17, columnspan=2, sticky=tk.EW)
 
-        self.label_10.grid(row=0, column=19, columnspan=3, sticky=tk.W + tk.E)
+        self.label_10.grid(row=0, column=19, columnspan=3, sticky=tk.EW)
 
         self.label_total.grid(row=0, column=22)
-        self.total_score.grid(row=1, column=22, rowspan=2,  sticky=tk.N + tk.S)
+        self.total_score.grid(row=1, column=22, rowspan=2,  sticky=tk.NS)
 
     def calc(self):
         #  Frame1

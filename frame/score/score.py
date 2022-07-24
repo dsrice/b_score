@@ -12,7 +12,7 @@ class Score:
         self.column = column
         self.score_1.grid(row=self.row, column=self.column)
         self.score_2.grid(row=self.row, column=self.column+1)
-        self.score.grid(row=self.row+1, column=self.column, columnspan=2, sticky=tk.W+tk.E)
+        self.score.grid(row=self.row+1, column=self.column, columnspan=2, sticky=tk.EW)
         self.strike = PhotoImage(file="image/strike.png")
         self.spare = PhotoImage(file="image/spare.png")
 
@@ -60,5 +60,5 @@ class Score:
         self.display_count = num
         self.display_flg = True
         self.score = tk.Label(self.base, text=num, background="white", bd=1, relief=tk.SOLID)
-        self.score.grid(row=self.row+1, column=self.column, columnspan=2, sticky=tk.W+tk.E)
+        self.score.grid(row=self.row+1, column=self.column, columnspan=2, sticky=tk.EW)
 
